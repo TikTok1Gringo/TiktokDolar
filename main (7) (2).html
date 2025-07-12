@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ttk Gringo</title>
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .custom-blue-button {
+            display: inline-block;
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .carousel-section {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .carousel-section h2 {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .carousel-section h2 span {
+            color: #00d4ff;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 8px;
+            gap: 12px;
+            justify-content: flex-start;
+        }
+
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-container img {
+            width: 140px;
+            height: auto;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .carousel-square img {
+            width: 170px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .carousel-arrow {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 140, 186, 0.8);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 6px 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 4px;
+        }
+
+        .carousel-arrow.left {
+            left: 4px;
+        }
+
+        .carousel-arrow.right {
+            right: 4px;
+        }
+
+        html, body {
+            overflow-x: hidden !important;
+        }
+    .cta-box {
+            background-color: #008CBA;
+            border-radius: 20px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+
+        .cta-box p {
+            color: white;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+
+        .access-button {
+            display: inline-block;
+            background-color: #000;
+            color: #FFD700;
+            padding: 12px 24px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        html, body {
+            overflow-x: hidden !important;
+        }
+    .investment-section {
+    padding: 24px 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #001f3f; /* Azul escuro do fundo */
+    color: #fff;
+}
+
+.investment-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+.investment-section ul li {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-left: 24px;
+    position: relative;
+}
+
+.investment-section ul li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    color: #00ffcc;
+}
+
+.cta-box {
+    background-color: #008CBA;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.cta-box p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.access-button {
+    display: inline-block;
+    background-color: #000;
+    color: #FFD700;
+    padding: 12px 24px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.access-button:hover {
+    background-color: #111;
+    transform: scale(1.05);
+}
+.elementor-widget-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+<style>
+  .toggle-container {
+    max-width: 600px;
+    margin: 24px auto;
+    background: #012b56; /* tom azul escuro */
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .toggle-header {
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #004080;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-header:hover {
+    background-color: #0059b3;
+  }
+
+  .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .toggle-content.open {
+    padding: 16px 20px;
+    max-height: 1000px; /* valor alto para permitir o conteúdo aparecer */
+  }
+
+  .toggle-arrow {
+    transition: transform 0.35s ease;
+  }
+
+  .toggle-arrow.open {
+    transform: rotate(90deg);
+  }
+
+  .toggle-content p {
+    margin-bottom: 12px;
+  }
+.toggle-content p strong {
+  margin-right: 6px;
+  display: inline-block;
+}
+.black-price-button {
+  display: inline-block;
+  background-color: #000; /* preto */
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: background 0.3s ease;
+}
+
+.black-price-button:hover {
+  background-color: #222;
+}
+
+
+    </style>
+</head>
+<body class="page-template page-template-elementor_canvas page page-id-1418 elementor-default elementor-template-canvas elementor-kit-10 elementor-page elementor-page-1418">
+    <div data-elementor-type="wp-page" data-elementor-id="1418" class="elementor elementor-1418" data-elementor-settings='{"ha_cmc_init_switcher":"no"}' data-elementor-post-type="page">
+        <div class="elementor-element elementor-element-1b730173 e-flex e-con-boxed e-con e-parent">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-25bc4eaa elementor-invisible elementor-widget elementor-widget-image" data-id="25bc4eaa">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" src="https://jhonatassilva.com.br/wp-content/uploads/elementor/thumbs/Prancheta-1_6dbbe904f6734388bbb5695500dff39b-r0i8b5xytjzwia6kke2bnkuipgvstmabdlqhhatpm0.png" alt="Prancheta" loading="lazy">
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-21228df3 elementor-widget elementor-widget-heading" data-id="21228df3">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">
+                            É ASSIM QUE ESTOU FAZENDO <b style="color:#00FFFF">U$12 MIL DÓLARES</b> TODOS OS MESES
+                        </h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-714db78b elementor-widget elementor-widget-html" data-id="714db78b">
+                    <div class="elementor-widget-container">
+                        <div id="vid_66c3ebec77838e000c733c73" style="position:relative;width:100%;padding:56.25% 0 0;">
+                            <img id="thumb_66c3ebec77838e000c733c73" src="https://images.converteai.net/eee4c5ea-dc21-4638-966b-c3d17c94f4e6/players/66c3ebec77838e000c733c73/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                            <div id="backdrop_66c3ebec77838e000c733c73" style="position:absolute;top:0;width:100%;height:100%;backdrop-filter:blur(5px);"></div>
+                        </div>
+                        <script async src="https://scripts.converteai.net/eee4c5ea-dc21-4638-966b-c3d17c94f4e6/players/66c3ebec77838e000c733c73/player.js"></script>
+                        <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-7ee32098 elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="7ee32098">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" style="color: #000; background-color: transparent; border: none;" href="#"></a>
+                            <a href="javascript:void(0);" class="custom-blue-button" onclick="document.getElementById('pixModal').style.display='block'">
+  <strong>QUERO GANHAR 10X EM DÓLAR</strong>
+</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-e8bfc9 elementor-widget elementor-widget-image" data-id="e8bfc9">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="300" height="43" src="https://jhonatassilva.com.br/wp-content/uploads/2024/10/compra-segura-300x43-1.png" class="attachment-large size-large wp-image-14" alt="Compra Segura">
+                    </div>
+                </div>
+
+                <!-- Prova social -->
+                <div class="carousel-section">
+                    <h2>Veja alguns resultados dos nossos Alunos do <span>TikTok Gringo</span></h2>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-arrow left" onclick="document.getElementById('carousel1').scrollBy({ left: -150, behavior: 'smooth' })">◀</button>
+                        <div class="carousel-container" id="carousel1">
+                            <img src="https://i.postimg.cc/3NBPFVN7/whatsapp-chat-1.png" alt="Aluno 1">
+                            <img src="https://i.postimg.cc/SQPs1BHT/Depoimento-01.png" alt="Aluno 2">
+                            <img src="https://i.postimg.cc/MGqFKxYD/Depoimento-02.png" alt="Aluno 3">
+                            <img src="https://i.postimg.cc/gcZQDMr3/print-04-1.png" alt="Aluno 4">
+                        </div>
+                        <button class="carousel-arrow right" onclick="document.getElementById('carousel1').scrollBy({ left: 150, behavior: 'smooth' })">▶</button>
+                    </div>
+                </div>
+
+                <!-- Novo carrossel Instagram -->
+                <div class="carousel-section">
+                    <h1>MÓDULOS DO CURSO</h1>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-arrow left" onclick="document.getElementById('carousel2').scrollBy({ left: -150, behavior: 'smooth' })">◀</button>
+                        <div class="carousel-container carousel-square" id="carousel2">
+                            <img src="https://i.postimg.cc/XYQkT73S/Prancheta-1.png" alt="Post 1">
+                            <img src="https://i.postimg.cc/B6DDQqWv/Prancheta-3.png" alt="Post 2">
+                            <img src="https://i.postimg.cc/nzHZMkgQ/Prancheta-5.png" alt="Post 3">
+                            <img src="https://i.postimg.cc/c4KWK69T/Prancheta-2.png" alt="Post 4">
+                            <img src="https://i.postimg.cc/65gmGgdk/Prancheta-6.png" alt="Post 5">
+                            <img src="https://i.postimg.cc/J0f2H70d/Prancheta-4.png" alt="Post 6">
+                            <img src="https://i.postimg.cc/N0hSZSF6/Prancheta-7.png" alt="Post 7">
+                        </div>
+                        <button class="carousel-arrow right" onclick="document.getElementById('carousel2').scrollBy({ left: 150, behavior: 'smooth' })">▶</button>
+                    </div>
+                </div>
+                <!-- Fim novo carrossel -->
+<div class="investment-section">
+    <p style="font-size: 18px; font-weight: bold; margin-bottom: 12px;"><h2><strong>O investimento para ter tudo isso é apenas:</strong></h2></p>
+
+    <ul style="list-style: none; padding: 0; margin: 0 0 16px 0; font-size: 16px;">
+        <li> Curso Completo TikTok Gringo</li>
+        <li> Lista de Nichos Virais</li>
+        <li> Melhores IAs para produção de conteúdo</li>
+        <li> Projeto 10k em 30 Dias</li>
+        
+    </ul>
+
+    <div class="cta-box">
+        <p style="font-size: 16px; margin-bottom: 4px;">🎯 <strong>SÓ HOJE:</strong></p>
+        <p style="text-decoration: line-through; color: #ccc; margin: 0;">De R$297</p>
+        <p style="font-size: 16px; margin: 4px 0;">Por apenas:</p>
+        <a href="https%3A%2F%2Fwa.me%2F5517981781317%0A%0A%0A" class="black-price-button">R$ 97,00</a>       
+        <a class="access-button" onclick="openModal()">QUERO MEU ACESSO</a>
+ <div class="elementor-element elementor-element-e8bfc9 elementor-widget elementor-widget-image" data-id="e8bfc9">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="300" height="43" src="https://jhonatassilva.com.br/wp-content/uploads/2024/10/compra-segura-300x43-1.png" class="attachment-large size-large wp-image-14" alt="Compra Segura">
+                      </div>
+     <style>
+  .toggle-container {
+    max-width: 600px;
+    margin: 24px auto;
+    background: #012b56; /* tom azul escuro */
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .toggle-header {
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #004080;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggle-header:hover {
+    background-color: #0059b3;
+  }
+
+  .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .toggle-content.open {
+    padding: 16px 20px;
+    max-height: 1000px; /* valor alto para permitir o conteúdo aparecer */
+  }
+
+  .toggle-arrow {
+    transition: transform 0.35s ease;
+  }
+
+  .toggle-arrow.open {
+    transform: rotate(90deg);
+  }
+
+  .toggle-content p {
+    margin-bottom: 12px;
+  }
+</style>
+
+<div class="toggle-container">
+  <div class="toggle-header" id="toggle-header">
+    Perguntas Frequentes (FAQ)
+    <span class="toggle-arrow" id="toggle-arrow">&#9654;</span>
+  </div>
+  <div class="toggle-content" id="toggle-content">
+    <p><strong><h3>Como acesso o conteúdo?</h3></strong> O acesso à Área de Membros é enviado para seu e-mail imediatamente após a confirmação do pagamento.</p>
+    <p><strong><h3>Serve para iniciantes?</h3></strong> Sim! O treinamento é feito exclusivamente para quem nunca mexeu com TikTok ou faturou em dólar e vai até o mais avançado que seria você faturando seus 10k dólares, é um treinamento completo.</p>
+    <p><strong><h3>O curso tem suporte?</h3></strong> Sim! Basta chamar nossa equipe a qualquer momento. Dentro da área de membros terá o contato da nossa equipe que funciona de domingo a domingo para atender todas as dúvidas.</p>
+    <p><strong><h3>Quanto posso ganhar no meu primeiro mês?</h3></strong> Aplicando certinho nossa estratégia de maneira consistente, já tivemos casos de alunos que com 9 dias já estavam ganhando em dólar e hoje já fazem uma renda excelente em dólar.</p>
+    </div>
+    <div id="pixModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background-color:#fff; color:#000; padding:20px; border-radius:12px; max-width:90%; text-align:center;">
+    <h2 style="color:#001f3f;">Pagamento via Pix</h2>
+    <p>Escaneie o QR Code abaixo ou copie a chave Pix:</p>
+    <img src="https://i.postimg.cc/dtRvYgLj/Screenshot-2025-07-12-08-30-33-268-com-picpay-edit.jpg" alt="QR Code Pix" style="width:200px; height:auto; margin:16px 0;">
+    <input type="CHAVE PIX" value="14981541913" id="pixKey" readonly style="width:100%; padding:10px; font-size:16px; text-align:center; border:1px solid #ccc; border-radius:8px;">
+    <br><br>
+    <a href="https://wa.me/5517981781317?text=Ol%C3%A1%20" target="_blank" style="display:inline-block; background-color:#25D366; color:#fff; padding:12px 20px; border-radius:20px; text-decoration:none; font-weight:bold;">ENVIAR COMPROVANTE</a>
+    <br><br>
+    <button onclick="closeModal()" style="margin-top:12px; background-color:#ccc; border:none; padding:8px 16px; border-radius:10px; cursor:pointer;">Fechar</button>
+  </div>
+</div>
+
+<script>
+  const toggleHeader = document.getElementById('toggle-header');
+  const toggleContent = document.getElementById('toggle-content');
+  const toggleArrow = document.getElementById('toggle-arrow');
+
+  toggleHeader.addEventListener('click', () => {
+    toggleContent.classList.toggle('open');
+    toggleArrow.classList.toggle('open');
+  });
+    function openModal() {
+  document.getElementById('pixModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('pixModal').style.display = 'none';
+}
+</script>
+
+</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
