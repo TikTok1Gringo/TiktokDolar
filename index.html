@@ -275,6 +275,79 @@
 
     </style>
 </head>
+<!-- Popup de Anúncio com efeito -->
+<div id="popup-anuncio" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 340px;
+  background-color: black;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 10px;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+">
+  <div id="fechar-popup" style="
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+  ">×</div>
+
+  <!-- IMAGEM DO ANÚNCIO -->
+  <img src="https://i.postimg.cc/wvJsGDJW/IMG-20250714-095416.jpg" alt="Anúncio" style="
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  ">
+
+  <!-- TEXTO -->
+  <div class="texto" style="flex: 1;">
+    <h4 style="margin: 0; font-size: 16px; color: green;">🎬 Filmes, Séries e Mais — Tudo em Um App</h4>
+    <p style="margin: 5px 0; font-size: 14px; color: white;">GARANTA SEU ACESSO AGORA!</p>
+    <a href="https://wa.me/5517981781317?text=Ol%C3%A1%20" target="_blank" style="
+      display: inline-block;
+      margin-top: 5px;
+      padding: 6px 12px;
+      background-color: #00c000;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    ">Quero Meu Acesso</a>
+  </div>
+</div>
+
+<!-- Script do popup -->
+<script>
+  // Mostra o popup após 4 segundos
+  setTimeout(() => {
+    const popup = document.getElementById("popup-anuncio");
+    popup.style.display = "flex";
+    setTimeout(() => {
+      popup.style.opacity = 1;
+    }, 50); // delay para a transição ativar corretamente
+  }, 4000);
+
+  // Fechar popup
+  document.getElementById("fechar-popup").onclick = function () {
+    const popup = document.getElementById("popup-anuncio");
+    popup.style.opacity = 0;
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 500);
+  };
+</script>
+
 <body class="page-template page-template-elementor_canvas page page-id-1418 elementor-default elementor-template-canvas elementor-kit-10 elementor-page elementor-page-1418">
     <div data-elementor-type="wp-page" data-elementor-id="1418" class="elementor elementor-1418" data-elementor-settings='{"ha_cmc_init_switcher":"no"}' data-elementor-post-type="page">
         <div class="elementor-element elementor-element-1b730173 e-flex e-con-boxed e-con e-parent">
