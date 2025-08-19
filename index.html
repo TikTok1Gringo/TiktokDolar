@@ -1,571 +1,1451 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> 
+<head>
     <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
     <script type="text/javascript">
     aclib.runAutoTag({
         zoneId: '6wps1xiez6',
     });
     </script>
-    
     <meta charset="UTF-8">
-    <title>Ttk Gringo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Gringo - Ganhe em Dólares com TikTok</title>
+    <meta name="description" content="Aprenda a ganhar U$12 mil dólares por mês com TikTok. Curso completo com estratégias comprovadas e suporte total.">
     <meta name="robots" content="max-image-preview:large">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #001f3f;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-
-        .custom-blue-button {
-            display: inline-block;
-            background-color: #008CBA;
-            color: white;
-            padding: 12px 24px;
-            margin-top: 16px;
-            border: none;
-            border-radius: 20px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .carousel-section {
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .carousel-section h2 {
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .carousel-section h2 span {
-            color: #00d4ff;
-        }
-
-        .carousel-wrapper {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .carousel-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            padding: 8px;
-            gap: 12px;
-            justify-content: flex-start;
-        }
-
-        .carousel-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        .carousel-container img {
-            width: 140px;
-            height: auto;
-            border-radius: 10px;
-            flex-shrink: 0;
-        }
-
-        .carousel-square img {
-            width: 170px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-            flex-shrink: 0;
-        }
-
-        .carousel-arrow {
-            position: absolute;
-            top: 40%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 140, 186, 0.8);
-            border: none;
-            color: white;
-            font-size: 18px;
-            padding: 6px 10px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 4px;
-        }
-
-        .carousel-arrow.left {
-            left: 4px;
-        }
-
-        .carousel-arrow.right {
-            right: 4px;
-        }
-
-        html, body {
-            overflow-x: hidden !important;
-        }
-    .cta-box {
-            background-color: #008CBA;
-            border-radius: 20px;
-            padding: 16px;
-            margin-top: 20px;
-        }
-
-        .cta-box p {
-            color: white;
-            margin: 30px 0;
-            font-weight: bold;
-        }
-
-        .access-button {
-            display: inline-block;
-            background-color: #000;
-            color: #FFD700;
-            padding: 12px 24px;
-            margin-top: 12px;
-            border: none;
-            border-radius: 20px;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        html, body {
-            overflow-x: hidden !important;
-        }
-    .investment-section {
-    padding: 24px 16px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #001f3f; /* Azul escuro do fundo */
-    color: #fff;
-}
-
-.investment-section ul {
-    list-style: none;
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>/* Reset e configurações básicas */
+* {
+    margin: 0;
     padding: 0;
-    margin: 0 0 20px 0;
-    font-size: 16px;
+    box-sizing: border-box;
 }
 
-.investment-section ul li {
-    margin-bottom: 8px;
-    text-align: left;
-    padding-left: 24px;
+/* Importação de fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Variáveis CSS para consistência */
+:root {
+    --primary-color: #001f3f;
+    --secondary-color: #008CBA;
+    --accent-color: #00d4ff;
+    --success-color: #00ffcc;
+    --warning-color: #FFD700;
+    --text-light: #ffffff;
+    --text-muted: #cccccc;
+    --border-radius: 12px;
+    --border-radius-small: 8px;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Configurações globais */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #002a5c 100%);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tipografia melhorada */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Botões melhorados */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--secondary-color), #0099cc);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-cta {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: var(--warning-color);
+    font-size: 1.2rem;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-cta:hover {
+    background: linear-gradient(135deg, #111111, #444444);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Header melhorado */
+.header {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(0, 31, 63, 0.9), rgba(0, 42, 92, 0.9));
+}
+
+.header img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
+.header h2 {
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header .accent {
+    color: var(--accent-color);
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Seção de vídeo */
+.video-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Carrosséis melhorados */
+.carousel-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    margin-bottom: 40px;
     position: relative;
 }
 
-.investment-section ul li::before {
+.carousel-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container img {
+    flex-shrink: 0;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.carousel-container img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+.carousel-testimonials img {
+    width: 280px;
+    height: auto;
+}
+
+.carousel-modules img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* Setas do carrossel */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, var(--secondary-color), #0099cc);
+    border: none;
+    color: var(--text-light);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.carousel-arrow:hover {
+    background: linear-gradient(135deg, #0099cc, var(--secondary-color));
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: var(--shadow-hover);
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+/* Seção de investimento */
+.investment-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 31, 63, 0.95), rgba(1, 43, 86, 0.95));
+    margin: 40px 0;
+    border-radius: var(--border-radius);
+}
+
+.investment-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.investment-list li {
+    padding: 15px 0;
+    padding-left: 40px;
+    position: relative;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.investment-list li:last-child {
+    border-bottom: none;
+}
+
+.investment-list li::before {
     content: "✅";
     position: absolute;
     left: 0;
-    color: #00ffcc;
+    color: var(--success-color);
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.5));
 }
 
+/* CTA Box melhorada */
 .cta-box {
-    background-color: #008CBA;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    color: #fff;
-}
-
-.cta-box p {
-    margin: 8px 0;
-    font-size: 16px;
-}
-
-.access-button {
-    display: inline-block;
-    background-color: #000;
-    color: #FFD700;
-    padding: 12px 24px;
-    margin-top: 12px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.access-button:hover {
-    background-color: #111;
-    transform: scale(1.05);
-}
-.elementor-widget-image img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-<style>
-  .toggle-container {
+    background: linear-gradient(135deg, var(--secondary-color), #0099cc);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    margin: 40px auto;
     max-width: 600px;
-    margin: 24px auto;
-    background: #012b56; /* tom azul escuro */
-    border-radius: 10px;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-
-  .toggle-header {
-    padding: 16px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #004080;
-    user-select: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .toggle-header:hover {
-    background-color: #0059b3;
-  }
-
-  .toggle-content {
-    max-height: 0;
+    box-shadow: var(--shadow-hover);
+    position: relative;
     overflow: hidden;
-    transition: max-height 0.35s ease;
-    padding: 0 20px;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .toggle-content.open {
-    padding: 16px 20px;
-    max-height: 1000px; /* valor alto para permitir o conteúdo aparecer */
-  }
-
-  .toggle-arrow {
-    transition: transform 0.35s ease;
-  }
-
-  .toggle-arrow.open {
-    transform: rotate(90deg);
-  }
-
-  .toggle-content p {
-    margin-bottom: 12px;
-  }
-.toggle-content p strong {
-  margin-right: 6px;
-  display: inline-block;
-}
-.black-price-button {
-  display: inline-block;
-  background-color: #000; /* preto */
-  color: #fff;
-  padding: 10px 24px;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  margin: 8px 0;
-  transition: background 0.3s ease;
 }
 
-.black-price-button:hover {
-  background-color: #222;
-}
-
-
-    </style>
-</head>
-<!-- Popup de Anúncio com efeito -->
-<div id="popup-anuncio" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 340px;
-  background-color: black;
-  border: 2px solid #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  padding: 10px;
-  z-index: 9999;
-  display: none;
-  align-items: center;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-">
-  <div id="fechar-popup" style="
+.cta-box::before {
+    content: '';
     position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #999;
-  ">×</div>
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
 
-  <!-- IMAGEM DO ANÚNCIO -->
-  <img src="https://i.postimg.cc/wvJsGDJW/IMG-20250714-095416.jpg" alt="Anúncio" style="
+@keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.price-current {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Popup melhorado */
+.popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 360px;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    box-shadow: var(--shadow-hover);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--text-muted);
+    transition: var(--transition);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.popup-close:hover {
+    color: var(--text-light);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.popup img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
     object-fit: cover;
-  ">
+    border: 3px solid var(--secondary-color);
+}
 
-  <!-- TEXTO -->
-  <div class="texto" style="flex: 1;">
-    <h4 style="margin: 0; font-size: 16px; color: green;">🎬 Filmes, Séries e Mais — SEM ANÚNCIOS CHATO</h4>
-    <p style="margin: 5px 0; font-size: 14px; color: white;">GARANTA SEU ACESSO AGORA!</p>
-    <a href="https://app.pushinpay.com.br/service/pay/9FA8E43B-3CAC-49F6-BE69-3BD88F084C32" target="_blank" style="
-      display: inline-block;
-      margin-top: 5px;
-      padding: 6px 12px;
-      background-color: #00c000;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    ">Quero Meu Acesso</a>
-  </div>
-</div>
+.popup-content {
+    flex: 1;
+}
 
-<!-- Script do popup -->
-<script>
-  // Mostra o popup após 4 segundos
-  setTimeout(() => {
-    const popup = document.getElementById("popup-anuncio");
-    popup.style.display = "flex";
-    setTimeout(() => {
-      popup.style.opacity = 1;
-    }, 50); // delay para a transição ativar corretamente
-  }, 4000);
+.popup h4 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: var(--success-color);
+}
 
-  // Fechar popup
-  document.getElementById("fechar-popup").onclick = function () {
-    const popup = document.getElementById("popup-anuncio");
-    popup.style.opacity = 0;
-    setTimeout(() => {
-      popup.style.display = "none";
-    }, 500);
-  };
-</script>
+.popup p {
+    margin: 5px 0 15px 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
 
-<body class="page-template page-template-elementor_canvas page page-id-1418 elementor-default elementor-template-canvas elementor-kit-10 elementor-page elementor-page-1418">
-    <div data-elementor-type="wp-page" data-elementor-id="1418" class="elementor elementor-1418" data-elementor-settings='{"ha_cmc_init_switcher":"no"}' data-elementor-post-type="page">
-        <div class="elementor-element elementor-element-1b730173 e-flex e-con-boxed e-con e-parent">
-            <div class="e-con-inner">
-                <div class="elementor-element elementor-element-25bc4eaa elementor-invisible elementor-widget elementor-widget-image" data-id="25bc4eaa">
-                    <div class="elementor-widget-container">
-                        <img decoding="async" src="https://jhonatassilva.com.br/wp-content/uploads/elementor/thumbs/Prancheta-1_6dbbe904f6734388bbb5695500dff39b-r0i8b5xytjzwia6kke2bnkuipgvstmabdlqhhatpm0.png" alt="Prancheta" loading="lazy">
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-21228df3 elementor-widget elementor-widget-heading" data-id="21228df3">
-                    <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">
-                            É ASSIM QUE ESTOU FAZENDO <b style="color:#00FFFF">U$12 MIL DÓLARES</b> TODOS OS MESES
-                        </h2>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-714db78b elementor-widget elementor-widget-html" data-id="714db78b">
-                    <div class="elementor-widget-container">
-                        <div style="position:relative;width:100%;padding-top:56.25%;">
-  <iframe src="https://player.vimeo.com/video/1100940639?context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&h=69fed223b1&s=51a7cc57f80c168d8425822024f2462e4e3620d9_1752481741?autoplay=1"
-          frameborder="0" 
-          allow="autoplay; fullscreen" 
-          allowfullscreen 
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
-  </iframe>
-</div>
+.popup .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, var(--success-color), #00cc99);
+    color: #000;
+    font-weight: 600;
+}
 
-                        <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-7ee32098 elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="7ee32098">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-button-wrapper">
-                            <div style="text-align: center;">
-  <a class="custom-blue-button" href="https://app.pushinpay.com.br/#/service/pay/9FA8D0BD-A186-469D-AC05-CD7227AA6ABA" target="_blank">
-  <strong>QUERO SAIR DO CLT</strong>
-</a>
+/* FAQ melhorado */
+.faq-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-</div>
+.faq-item {
+    background: linear-gradient(135deg, rgba(1, 43, 86, 0.8), rgba(0, 64, 128, 0.8));
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
 
-</a>
+.faq-item:hover {
+    box-shadow: var(--shadow-hover);
+}
 
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-e8bfc9 elementor-widget elementor-widget-image" data-id="e8bfc9">
-                    <div class="elementor-widget-container">
-                        <img decoding="async" width="300" height="43" src="https://jhonatassilva.com.br/wp-content/uploads/2024/10/compra-segura-300x43-1.png" class="attachment-large size-large wp-image-14" alt="Compra Segura">
-                    </div>
-                </div>
-
-                <!-- Prova social -->
-                <div class="carousel-section">
-                    <h2>Veja alguns resultados dos nossos Alunos do <span>TikTok Gringo</span></h2>
-                    <div class="carousel-wrapper">
-                        <button class="carousel-arrow left" onclick="document.getElementById('carousel1').scrollBy({ left: -150, behavior: 'smooth' })">◀</button>
-                        <div class="carousel-container" id="carousel1">
-                            <img src="https://i.postimg.cc/3NBPFVN7/whatsapp-chat-1.png" alt="Aluno 1">
-                            <img src="https://i.postimg.cc/SQPs1BHT/Depoimento-01.png" alt="Aluno 2">
-                            <img src="https://i.postimg.cc/MGqFKxYD/Depoimento-02.png" alt="Aluno 3">
-                            <img src="https://i.postimg.cc/gcZQDMr3/print-04-1.png" alt="Aluno 4">
-                        </div>
-                        <button class="carousel-arrow right" onclick="document.getElementById('carousel1').scrollBy({ left: 150, behavior: 'smooth' })">▶</button>
-                    </div>
-                </div>
-
-                <!-- Novo carrossel Instagram -->
-                <div class="carousel-section">
-                    <h1>MÓDULOS DO CURSO</h1>
-                    <div class="carousel-wrapper">
-                        <button class="carousel-arrow left" onclick="document.getElementById('carousel2').scrollBy({ left: -150, behavior: 'smooth' })">◀</button>
-                        <div class="carousel-container carousel-square" id="carousel2">
-                            <img src="https://i.postimg.cc/XYQkT73S/Prancheta-1.png" alt="Post 1">
-                            <img src="https://i.postimg.cc/B6DDQqWv/Prancheta-3.png" alt="Post 2">
-                            <img src="https://i.postimg.cc/nzHZMkgQ/Prancheta-5.png" alt="Post 3">
-                            <img src="https://i.postimg.cc/c4KWK69T/Prancheta-2.png" alt="Post 4">
-                            <img src="https://i.postimg.cc/65gmGgdk/Prancheta-6.png" alt="Post 5">
-                            <img src="https://i.postimg.cc/J0f2H70d/Prancheta-4.png" alt="Post 6">
-                            <img src="https://i.postimg.cc/N0hSZSF6/Prancheta-7.png" alt="Post 7">
-                        </div>
-                        <button class="carousel-arrow right" onclick="document.getElementById('carousel2').scrollBy({ left: 150, behavior: 'smooth' })">▶</button>
-                    </div>
-                </div>
-                <!-- Fim novo carrossel -->
-<div class="investment-section">
-    <p style="font-size: 18px; font-weight: bold; margin-bottom: 12px;"><h2><strong>O investimento para ter tudo isso é apenas:</strong></h2></p>
-
-    <ul style="list-style: none; padding: 0; margin: 0 0 16px 0; font-size: 16px;">
-        <li> Curso Completo TikTok Gringo</li>
-        <li> Lista de Nichos Virais</li>
-        <li> Melhores IAs para produção de conteúdo</li>
-        <li> Projeto 10k em 30 Dias</li>
-        
-    </ul>
-
-    <div class="cta-box">
-        <p style="font-size: 16px; margin-bottom: 4px;">🎯 <strong>SÓ HOJE:</strong></p>
-        <p style="text-decoration: line-through; color: #ccc; margin: 0;">De R$297</p>
-        <p style="font-size: 16px; margin: 4px 0;">Por apenas:</p>
-        <a class="black-price-button">R$ 59,90</a>       
-        <a class="access-button" href="https://app.pushinpay.com.br/#/service/pay/9FA8D0BD-A186-469D-AC05-CD7227AA6ABA" target="_blank">
-  QUERO MEU ACESSO
-</a>
-
- <div class="elementor-element elementor-element-e8bfc9 elementor-widget elementor-widget-image" data-id="e8bfc9">
-                    <div class="elementor-widget-container">
-                        <img decoding="async" width="300" height="43" src="https://jhonatassilva.com.br/wp-content/uploads/2024/10/compra-segura-300x43-1.png" class="attachment-large size-large wp-image-14" alt="Compra Segura">
-                      </div>
-     <style>
-  .toggle-container {
-    max-width: 600px;
-    margin: 24px auto;
-    background: #012b56; /* tom azul escuro */
-    border-radius: 10px;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-
-  .toggle-header {
-    padding: 16px 20px;
+.faq-header {
+    padding: 20px 25px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #004080;
-    user-select: none;
+    font-weight: 600;
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    transition: var(--transition);
+    user-select: none;
+}
 
-  .toggle-header:hover {
-    background-color: #0059b3;
-  }
+.faq-header:hover {
+    background: rgba(0, 89, 179, 0.3);
+}
 
-  .toggle-content {
+.faq-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
-    padding: 0 20px;
-    font-size: 15px;
-    line-height: 1.5;
-  }
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
-  .toggle-content.open {
-    padding: 16px 20px;
-    max-height: 1000px; /* valor alto para permitir o conteúdo aparecer */
-  }
+.faq-content.open {
+    max-height: 500px;
+    padding: 20px 25px;
+}
 
-  .toggle-arrow {
-    transition: transform 0.35s ease;
-  }
+.faq-arrow {
+    transition: transform 0.4s ease;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
 
-  .toggle-arrow.open {
+.faq-arrow.open {
     transform: rotate(90deg);
-  }
+}
 
-  .toggle-content p {
-    margin-bottom: 12px;
-  }
-</style>
+/* Garantia e segurança */
+.security-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
 
-<div class="toggle-container">
-  <div class="toggle-header" id="toggle-header">
-    Perguntas Frequentes (FAQ)
-    <span class="toggle-arrow" id="toggle-arrow">&#9654;</span>
-  </div>
-  <div class="toggle-content" id="toggle-content">
-    <p><strong><h3>Como acesso o conteúdo?</h3></strong> O acesso à Área de Membros é enviado para seu e-mail imediatamente após a confirmação do pagamento.</p>
-    <p><strong><h3>Serve para iniciantes?</h3></strong> Sim! O treinamento é feito exclusivamente para quem nunca mexeu com TikTok ou faturou em dólar e vai até o mais avançado que seria você faturando seus 10k dólares, é um treinamento completo.</p>
-    <p><strong><h3>O curso tem suporte?</h3></strong> Sim! Basta chamar nossa equipe a qualquer momento. Dentro da área de membros terá o contato da nossa equipe que funciona de domingo a domingo para atender todas as dúvidas.</p>
-    <p><strong><h3>Quanto posso ganhar no meu primeiro mês?</h3></strong> Aplicando certinho nossa estratégia de maneira consistente, já tivemos casos de alunos que com 9 dias já estavam ganhando em dólar e hoje já fazem uma renda excelente em dólar.</p>
+.security-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-small);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.security-badge img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .carousel-wrapper {
+        padding: 0 40px;
+    }
+    
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .carousel-testimonials img {
+        width: 240px;
+    }
+    
+    .carousel-modules img {
+        width: 160px;
+        height: 200px;
+    }
+    
+    .popup {
+        width: 320px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .btn-cta {
+        padding: 14px 24px;
+        font-size: 1.1rem;
+    }
+    
+    .investment-section {
+        padding: 60px 15px;
+        margin: 20px 0;
+    }
+    
+    .cta-box {
+        padding: 30px 20px;
+    }
+    
+    .security-badges {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-wrapper {
+        padding: 0 30px;
+    }
+    
+    .carousel-testimonials img {
+        width: 200px;
+    }
+    
+    .carousel-modules img {
+        width: 140px;
+        height: 180px;
+    }
+    
+    .popup {
+        width: 280px;
+    }
+    
+    .popup img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .security-badges {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Melhorias de acessibilidade */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Estados de foco para acessibilidade */
+button:focus,
+a:focus,
+.carousel-arrow:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.5s ease;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(0, 212, 255, 0.3);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>  
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
     </div>
-    <div id="pixModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
-  <div style="background-color:#012b56; color:#fff; padding:20px; border-radius:12px; max-width:90%; text-align:center;">
-      <h2 style="color:#ccc; margin-bottom: 12px;">Pagamento via Pix</h2>
-<a href="javascript:void(0);" 
-   class="custom-blue-button" 
-   style="display: inline-block; padding: 12px 24px; background-color: #008CBA; color: white; border-radius: 20px; font-weight: bold; text-decoration: none; cursor: pointer;"
-   onclick="openModal()">
-   VALOR: R$ 59,90
-</a>
-    <h4>1. Escaneie o QR Code abaixo ou copie a chave Pix:</h4>
-      <h4>2. Depois de Fazer o Pagamento, Clique em <strong>ENVIAR EMAIL</strong></h4>
-    <img src="https://i.postimg.cc/dtRvYgLj/Screenshot-2025-07-12-08-30-33-268-com-picpay-edit.jpg" alt="QR Code Pix" style="width:200px; height:auto; margin:16px 56;">
-      <h3><strong>⬇️CHAVE PIX⬇️</strong></h3>
-    <input type="CHAVE PIX" value="14981541913" id="pixKey" readonly style="width:100%; padding:10px; font-size:16px; text-align:center; border:1px solid #ccc; border-radius:8px;">
-    <br>
-    <a href="https://wa.me/5517981781317?text=Ol%C3%A1%20" target="_blank" style="display:inline-block; background-color:#25D366; color:#fff; padding:12px 20px; border-radius:20px; text-decoration:none; font-weight:bold;">ENVIAR EMAIL</a>
-    <br>
-    <button onclick="closeModal()" style="margin-top:12px; background-color:#ccc; border:none; padding:8px 16px; border-radius:10px; cursor:pointer;">Fechar</button>
-  </div>
-</div>
 
-<script>
-  const toggleHeader = document.getElementById('toggle-header');
-  const toggleContent = document.getElementById('toggle-content');
-  const toggleArrow = document.getElementById('toggle-arrow');
+    <!-- Header Principal -->
+    <header class="header">
+        <div class="container">
+            <img src="https://jhonatassilva.com.br/wp-content/uploads/elementor/thumbs/Prancheta-1_6dbbe904f6734388bbb5695500dff39b-r0i8b5xytjzwia6kke2bnkuipgvstmabdlqhhatpm0.png" 
+                 alt="Logo TikTok Gringo" 
+                 loading="eager">
+            
+            <h1>É ASSIM QUE ESTOU FAZENDO <span class="accent">U$12 MIL DÓLARES</span> TODOS OS MESES</h1>
+        </div>
+    </header>
 
-  toggleHeader.addEventListener('click', () => {
-    toggleContent.classList.toggle('open');
-    toggleArrow.classList.toggle('open');
-  });
-    function openModal() {
-  document.getElementById('pixModal').style.display = 'flex';
-}
+    <!-- Seção de Vídeo -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <iframe src="https://player.vimeo.com/video/1100940639?context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&h=69fed223b1&s=51a7cc57f80c168d8425822024f2462e4e3620d9_1752481741?autoplay=1"
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen
+                        title="Vídeo explicativo do curso TikTok Gringo">
+                </iframe>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://app.pushinpay.com.br/#/service/pay/9FA8D0BD-A186-469D-AC05-CD7227AA6ABA" 
+                   target="_blank" 
+                   rel="noopener"
+                   class="btn btn-primary"
+                   aria-label="Acessar curso TikTok Gringo">
+                    <strong>QUERO SAIR DO CLT</strong>
+                </a>
+            </div>
 
-function closeModal() {
-  document.getElementById('pixModal').style.display = 'none';
-}
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="https://jhonatassilva.com.br/wp-content/uploads/2024/10/compra-segura-300x43-1.png" 
+                     alt="Compra 100% Segura" 
+                     style="max-width: 300px; height: auto;"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
 
-            </body>
-            </html>
+    <!-- Seção de Depoimentos -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2>Veja alguns resultados dos nossos Alunos do <span>TikTok Gringo</span></h2>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" aria-label="Ver depoimentos anteriores">◀</button>
+                <div class="carousel-container carousel-testimonials" id="carousel-testimonials" tabindex="0">
+                    <img src="https://i.postimg.cc/3NBPFVN7/whatsapp-chat-1.png" alt="Depoimento de aluno 1" loading="lazy">
+                    <img src="https://i.postimg.cc/SQPs1BHT/Depoimento-01.png" alt="Depoimento de aluno 2" loading="lazy">
+                    <img src="https://i.postimg.cc/MGqFKxYD/Depoimento-02.png" alt="Depoimento de aluno 3" loading="lazy">
+                    <img src="https://i.postimg.cc/gcZQDMr3/print-04-1.png" alt="Depoimento de aluno 4" loading="lazy">
+                </div>
+                <button class="carousel-arrow right" aria-label="Ver próximos depoimentos">▶</button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Seção de Módulos -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2>MÓDULOS DO CURSO</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" aria-label="Ver módulos anteriores">◀</button>
+                <div class="carousel-container carousel-modules" id="carousel-modules" tabindex="0">
+                    <img src="https://i.postimg.cc/XYQkT73S/Prancheta-1.png" alt="Módulo 1: Criando Perfil Americano" loading="lazy">
+                    <img src="https://i.postimg.cc/B6DDQqWv/Prancheta-3.png" alt="Módulo 2: Ativando IAs Eficientes" loading="lazy">
+                    <img src="https://i.postimg.cc/nzHZMkgQ/Prancheta-5.png" alt="Módulo 3: Criar Vídeos com Desenho Animado" loading="lazy">
+                    <img src="https://i.postimg.cc/c4KWK69T/Prancheta-2.png" alt="Módulo 4: Nichos Mais Lucrativos" loading="lazy">
+                    <img src="https://i.postimg.cc/65gmGgdk/Prancheta-6.png" alt="Módulo 5: Configurando Meios de Recebimento" loading="lazy">
+                    <img src="https://i.postimg.cc/J0f2H70d/Prancheta-4.png" alt="Módulo 6: Lucrando com Nichos Virais" loading="lazy">
+                    <img src="https://i.postimg.cc/N0hSZSF6/Prancheta-7.png" alt="Módulo 7: Ativando +2 Monetizações" loading="lazy">
+                </div>
+                <button class="carousel-arrow right" aria-label="Ver próximos módulos">▶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Investimento -->
+    <section class="investment-section">
+        <div class="container">
+            <h2><strong>O investimento para ter tudo isso é apenas:</strong></h2>
+
+            <ul class="investment-list">
+                <li>Curso Completo TikTok Gringo</li>
+                <li>Lista de Nichos Virais</li>
+                <li>Melhores IAs para produção de conteúdo</li>
+                <li>Projeto 10k em 30 Dias</li>
+            </ul>
+
+            <div class="cta-box">
+                <p>🎯 <strong>SÓ HOJE:</strong></p>
+                <p class="price-original">De R$297</p>
+                <p>Por apenas:</p>
+                <div class="price-current">R$ 59,90</div>
                 
+                <a href="https://app.pushinpay.com.br/#/service/pay/9FA8D0BD-A186-469D-AC05-CD7227AA6ABA" 
+                   target="_blank" 
+                   rel="noopener"
+                   class="btn btn-cta"
+                   aria-label="Acessar curso TikTok Gringo por R$ 59,90">
+                    QUERO MEU ACESSO
+                </a>
+
+                <div class="security-badges">
+                    <div class="security-badge">
+                        <span>🔒</span>
+                        <span>Compra Segura</span>
+                    </div>
+                    <div class="security-badge">
+                        <span>⚡</span>
+                        <span>Garantia de 7 Dias</span>
+                    </div>
+                    <div class="security-badge">
+                        <span>🔐</span>
+                        <span>Ambiente Seguro</span>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal PIX (mantido do original) -->
+    <div id="pixModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+        <div style="background-color:#012b56; color:#fff; padding:20px; border-radius:12px; max-width:90%; text-align:center;">
+            <h2 style="color:#ccc; margin-bottom: 12px;">Pagamento via Pix</h2>
+            <a href="javascript:void(0);" 
+               class="btn btn-primary" 
+               style="display: inline-block; margin-bottom: 20px;"
+               onclick="openModal()">
+               VALOR: R$ 59,90
+            </a>
+            <h4>1. Escaneie o QR Code abaixo ou copie a chave Pix:</h4>
+            <h4>2. Depois de Fazer o Pagamento, Clique em <strong>ENVIAR EMAIL</strong></h4>
+            <img src="https://i.postimg.cc/dtRvYgLj/Screenshot-2025-07-12-08-30-33-268-com-picpay-edit.jpg" 
+                 alt="QR Code Pix" 
+                 style="width:200px; height:auto; margin:16px 0;"
+                 loading="lazy">
+            <h3><strong>⬇️CHAVE PIX⬇️</strong></h3>
+            <input type="text" value="14981541913" id="pixKey" readonly 
+                   style="width:100%; padding:10px; font-size:16px; text-align:center; border:1px solid #ccc; border-radius:8px; margin-bottom: 20px;">
+            <br>
+            <a href="https://wa.me/5517981781317?text=Ol%C3%A1%20" 
+               target="_blank" 
+               rel="noopener"
+               class="btn"
+               style="background-color:#25D366; margin-bottom: 10px;">
+               ENVIAR EMAIL
+            </a>
+            <br>
+            <button onclick="closeModal()" 
+                    style="background-color:#ccc; border:none; padding:8px 16px; border-radius:10px; cursor:pointer; color: #000;">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Funções do modal PIX (mantidas do original)
+        function openModal() {
+            document.getElementById('pixModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('pixModal').style.display = 'none';
+        }
+
+        // Remover preloader quando página carregar
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.classList.add('hidden');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }
+        });
+   // Configurações globais
+const CONFIG = {
+    POPUP_DELAY: 6000, // 6 segundos
+    CAROUSEL_SCROLL_AMOUNT: 200,
+    ANIMATION_DURATION: 300
+};
+
+// Utilitários
+const Utils = {
+    // Debounce para otimizar performance
+    debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    },
+
+    // Smooth scroll para elementos
+    smoothScrollTo(element, to, duration) {
+        const start = element.scrollLeft;
+        const change = to - start;
+        const startTime = performance.now();
+
+        function animateScroll(currentTime) {
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            
+            // Easing function (easeInOutQuad)
+            const easeProgress = progress < 0.5 
+                ? 2 * progress * progress 
+                : -1 + (4 - 2 * progress) * progress;
+            
+            element.scrollLeft = start + change * easeProgress;
+            
+            if (progress < 1) {
+                requestAnimationFrame(animateScroll);
+            }
+        }
+        
+        requestAnimationFrame(animateScroll);
+    },
+
+    // Verificar se elemento está visível na viewport
+    isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+};
+
+// Gerenciador de Popup
+class PopupManager {
+    constructor() {
+        this.popup = null;
+        this.isVisible = false;
+        this.hasBeenShown = false;
+    }
+
+    init() {
+        this.createPopup();
+        this.scheduleShow();
+        this.setupEventListeners();
+    }
+
+    createPopup() {
+        this.popup = document.createElement('div');
+        this.popup.id = 'popup-anuncio';
+        this.popup.className = 'popup';
+        this.popup.innerHTML = `
+            <div class="popup-close" id="fechar-popup" aria-label="Fechar popup">×</div>
+            <img src="https://i.postimg.cc/wvJsGDJW/IMG-20250714-095416.jpg" alt="Anúncio de filmes e séries" loading="lazy">
+            <div class="popup-content">
+                <h4>🎬 Filmes, Séries SEM ANUNCIOS CHATOS</h4>
+                <p>GARANTA SEU ACESSO AGORA!</p>
+                <a href="https://app.pushinpay.com.br/service/pay/9FA8E43B-3CAC-49F6-BE69-3BD88F084C32" target="_blank" rel="noopener" class="btn">
+                    Quero Meu Acesso
+                </a>
+            </div>
+        `;
+        document.body.appendChild(this.popup);
+    }
+
+    scheduleShow() {
+        if (!this.hasBeenShown) {
+            setTimeout(() => {
+                this.show();
+            }, CONFIG.POPUP_DELAY);
+        }
+    }
+
+    show() {
+        if (this.popup && !this.isVisible) {
+            this.popup.style.display = 'flex';
+            this.hasBeenShown = true;
+            
+            // Pequeno delay para ativar a transição
+            requestAnimationFrame(() => {
+                this.popup.style.opacity = '1';
+                this.isVisible = true;
+            });
+
+            // Auto-hide após 30 segundos
+            setTimeout(() => {
+                if (this.isVisible) {
+                    this.hide();
+                }
+            }, 30000);
+        }
+    }
+
+    hide() {
+        if (this.popup && this.isVisible) {
+            this.popup.style.opacity = '0';
+            this.isVisible = false;
+            
+            setTimeout(() => {
+                if (this.popup) {
+                    this.popup.style.display = 'none';
+                }
+            }, 500);
+        }
+    }
+
+    setupEventListeners() {
+        // Fechar popup
+        document.addEventListener('click', (e) => {
+            if (e.target.id === 'fechar-popup') {
+                this.hide();
+            }
+        });
+
+        // Fechar com ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.isVisible) {
+                this.hide();
+            }
+        });
+
+        // Fechar clicando fora (opcional)
+        document.addEventListener('click', (e) => {
+            if (this.isVisible && e.target === this.popup) {
+                this.hide();
+            }
+        });
+    }
+}
+
+// Gerenciador de Carrossel
+class CarouselManager {
+    constructor() {
+        this.carousels = [];
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+    }
+
+    init() {
+        this.findCarousels();
+        this.setupEventListeners();
+        this.setupTouchSupport();
+    }
+
+    findCarousels() {
+        const carouselContainers = document.querySelectorAll('.carousel-container');
+        carouselContainers.forEach((container, index) => {
+            const wrapper = container.closest('.carousel-wrapper');
+            if (wrapper) {
+                this.carousels.push({
+                    container,
+                    wrapper,
+                    leftArrow: wrapper.querySelector('.carousel-arrow.left'),
+                    rightArrow: wrapper.querySelector('.carousel-arrow.right'),
+                    id: container.id || `carousel-${index}`
+                });
+            }
+        });
+    }
+
+    setupEventListeners() {
+        this.carousels.forEach(carousel => {
+            if (carousel.leftArrow) {
+                carousel.leftArrow.addEventListener('click', () => {
+                    this.scrollCarousel(carousel.container, -CONFIG.CAROUSEL_SCROLL_AMOUNT);
+                });
+            }
+
+            if (carousel.rightArrow) {
+                carousel.rightArrow.addEventListener('click', () => {
+                    this.scrollCarousel(carousel.container, CONFIG.CAROUSEL_SCROLL_AMOUNT);
+                });
+            }
+
+            // Navegação por teclado
+            carousel.container.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    this.scrollCarousel(carousel.container, -CONFIG.CAROUSEL_SCROLL_AMOUNT);
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    this.scrollCarousel(carousel.container, CONFIG.CAROUSEL_SCROLL_AMOUNT);
+                }
+            });
+        });
+    }
+
+    setupTouchSupport() {
+        this.carousels.forEach(carousel => {
+            carousel.container.addEventListener('touchstart', (e) => {
+                this.touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            carousel.container.addEventListener('touchend', (e) => {
+                this.touchEndX = e.changedTouches[0].screenX;
+                this.handleSwipe(carousel.container);
+            }, { passive: true });
+        });
+    }
+
+    handleSwipe(container) {
+        const swipeThreshold = 50;
+        const diff = this.touchStartX - this.touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - scroll right
+                this.scrollCarousel(container, CONFIG.CAROUSEL_SCROLL_AMOUNT);
+            } else {
+                // Swipe right - scroll left
+                this.scrollCarousel(container, -CONFIG.CAROUSEL_SCROLL_AMOUNT);
+            }
+        }
+    }
+
+    scrollCarousel(container, amount) {
+        const targetScroll = container.scrollLeft + amount;
+        Utils.smoothScrollTo(container, targetScroll, CONFIG.ANIMATION_DURATION);
+    }
+}
+
+// Gerenciador de FAQ
+class FAQManager {
+    constructor() {
+        this.faqItems = [];
+    }
+
+    init() {
+        this.createFAQSection();
+        this.setupEventListeners();
+    }
+
+    createFAQSection() {
+        const faqData = [
+            {
+                question: "Como acesso o conteúdo?",
+                answer: "O acesso à Área de Membros é enviado para seu e-mail imediatamente após a confirmação do pagamento."
+            },
+            {
+                question: "Serve para iniciantes?",
+                answer: "Sim! O treinamento é feito exclusivamente para quem nunca mexeu com TikTok ou faturou em dólar e vai até o mais avançado que seria você faturando seus 10k dólares, é um treinamento completo."
+            },
+            {
+                question: "O curso tem suporte?",
+                answer: "Sim! Basta chamar nossa equipe a qualquer momento. Dentro da área de membros terá o contato da nossa equipe que funciona de domingo a domingo para atender todas as dúvidas."
+            },
+            {
+                question: "Quanto posso ganhar no meu primeiro mês?",
+                answer: "Aplicando certinho nossa estratégia de maneira consistente, já tivemos casos de alunos que com 9 dias já estavam ganhando em dólar e hoje já fazem uma renda excelente em dólar."
+            }
+        ];
+
+        const faqContainer = document.createElement('section');
+        faqContainer.className = 'faq-section';
+        faqContainer.innerHTML = `
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 40px;">Perguntas Frequentes (FAQ)</h2>
+                <div class="faq-list">
+                    ${faqData.map((item, index) => `
+                        <div class="faq-item" data-index="${index}">
+                            <div class="faq-header" tabindex="0" role="button" aria-expanded="false">
+                                <span>${item.question}</span>
+                                <span class="faq-arrow">▶</span>
+                            </div>
+                            <div class="faq-content">
+                                <p>${item.answer}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+
+        // Inserir antes do final do body
+        document.body.insertBefore(faqContainer, document.body.lastElementChild);
+        
+        this.faqItems = document.querySelectorAll('.faq-item');
+    }
+
+    setupEventListeners() {
+        this.faqItems.forEach(item => {
+            const header = item.querySelector('.faq-header');
+            const content = item.querySelector('.faq-content');
+            const arrow = item.querySelector('.faq-arrow');
+
+            const toggleFAQ = () => {
+                const isOpen = content.classList.contains('open');
+                
+                // Fechar todos os outros
+                this.faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.faq-content').classList.remove('open');
+                        otherItem.querySelector('.faq-arrow').classList.remove('open');
+                        otherItem.querySelector('.faq-header').setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Toggle atual
+                if (isOpen) {
+                    content.classList.remove('open');
+                    arrow.classList.remove('open');
+                    header.setAttribute('aria-expanded', 'false');
+                } else {
+                    content.classList.add('open');
+                    arrow.classList.add('open');
+                    header.setAttribute('aria-expanded', 'true');
+                }
+            };
+
+            header.addEventListener('click', toggleFAQ);
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ();
+                }
+            });
+        });
+    }
+}
+
+// Gerenciador de Performance e Lazy Loading
+class PerformanceManager {
+    constructor() {
+        this.imageObserver = null;
+    }
+
+    init() {
+        this.setupLazyLoading();
+        this.optimizeImages();
+        this.preloadCriticalResources();
+    }
+
+    setupLazyLoading() {
+        if ('IntersectionObserver' in window) {
+            this.imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            this.imageObserver.unobserve(img);
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '50px 0px'
+            });
+
+            // Observar imagens com data-src
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                this.imageObserver.observe(img);
+            });
+        }
+    }
+
+    optimizeImages() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            // Adicionar loading="lazy" se não existir
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
+
+            // Adicionar decode="async" para melhor performance
+            img.setAttribute('decoding', 'async');
+        });
+    }
+
+   preloadCriticalResources() {
+        // Preload Google Fonts
+        const fontLink = document.createElement('link');
+        fontLink.rel = 'preload';
+        fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap';
+        fontLink.as = 'style';
+        fontLink.onload = function() { this.onload = null; this.rel = 'stylesheet'; };
+        document.head.appendChild(fontLink);
+    }
+}
+
+// Gerenciador de Animações
+class AnimationManager {
+    constructor() {
+        this.animatedElements = [];
+    }
+
+    init() {
+        this.setupScrollAnimations();
+        this.addEntranceAnimations();
+    }
+
+    setupScrollAnimations() {
+        if ('IntersectionObserver' in window) {
+            const animationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                        animationObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            // Observar elementos que devem ser animados
+            const elementsToAnimate = document.querySelectorAll('.carousel-section, .investment-section, .cta-box');
+            elementsToAnimate.forEach(el => {
+                animationObserver.observe(el);
+            });
+        }
+    }
+
+    addEntranceAnimations() {
+        // Adicionar animação de entrada para o header
+        const header = document.querySelector('.header');
+        if (header) {
+            header.style.opacity = '0';
+            header.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                header.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+            }, 100);
+        }
+    }
+}
+
+// Gerenciador de Acessibilidade
+class AccessibilityManager {
+    init() {
+        this.setupKeyboardNavigation();
+        this.addAriaLabels();
+        this.setupFocusManagement();
+    }
+
+    setupKeyboardNavigation() {
+        // Permitir navegação por Tab em elementos interativos
+        const interactiveElements = document.querySelectorAll('button, a, .carousel-container');
+        interactiveElements.forEach(el => {
+            if (!el.hasAttribute('tabindex')) {
+                el.setAttribute('tabindex', '0');
+            }
+        });
+    }
+
+    addAriaLabels() {
+        // Adicionar labels para carrosséis
+        const carousels = document.querySelectorAll('.carousel-container');
+        carousels.forEach((carousel, index) => {
+            carousel.setAttribute('role', 'region');
+            carousel.setAttribute('aria-label', `Carrossel ${index + 1}`);
+        });
+
+        // Adicionar labels para botões
+        const ctaButtons = document.querySelectorAll('.btn-cta');
+        ctaButtons.forEach(btn => {
+            if (!btn.hasAttribute('aria-label')) {
+                btn.setAttribute('aria-label', 'Acessar curso TikTok Gringo');
+            }
+        });
+    }
+
+    setupFocusManagement() {
+        // Melhorar visibilidade do foco
+        const style = document.createElement('style');
+        style.textContent = `
+            *:focus {
+                outline: 2px solid var(--accent-color) !important;
+                outline-offset: 2px !important;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+// Inicialização da aplicação
+class App {
+    constructor() {
+        this.popupManager = new PopupManager();
+        this.carouselManager = new CarouselManager();
+        this.faqManager = new FAQManager();
+        this.performanceManager = new PerformanceManager();
+        this.animationManager = new AnimationManager();
+        this.accessibilityManager = new AccessibilityManager();
+    }
+
+    init() {
+        // Aguardar DOM estar pronto
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.start());
+        } else {
+            this.start();
+        }
+    }
+
+    start() {
+        try {
+            // Inicializar todos os gerenciadores
+            this.performanceManager.init();
+            this.carouselManager.init();
+            this.faqManager.init();
+            this.popupManager.init();
+            this.animationManager.init();
+            this.accessibilityManager.init();
+
+            // Configurar eventos globais
+            this.setupGlobalEvents();
+            
+            console.log('TikTok Gringo - Site carregado com sucesso!');
+        } catch (error) {
+            console.error('Erro ao inicializar o site:', error);
+        }
+    }
+
+    setupGlobalEvents() {
+        // Smooth scroll para links internos
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href^="#"]');
+            if (link) {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+
+        // Otimizar redimensionamento da janela
+        const handleResize = Utils.debounce(() => {
+            // Reajustar carrosséis se necessário
+            this.carouselManager.carousels.forEach(carousel => {
+                carousel.container.scrollLeft = 0;
+            });
+        }, 250);
+
+        window.addEventListener('resize', handleResize);
+
+        // Prevenção de scroll horizontal
+        document.addEventListener('touchmove', (e) => {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    }
+}
+
+// Inicializar aplicação
+const app = new App();
+app.init();
+
+ </script>
+</body>
+</html>
+   
